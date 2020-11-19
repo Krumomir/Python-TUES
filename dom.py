@@ -7,3 +7,16 @@ while num >= 2:
 	count += 1
 	
 print(num1,'->',count)
+
+def findLength(string): 
+  
+    count = 0
+
+    for i in string: 
+        count+= 1
+
+    return count 
+  
+string = "12345"
+print("Lenght", findLength(string))
+    
