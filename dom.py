@@ -1,12 +1,13 @@
 import math
-num = int(input("Enter a number: "))
-num1 = num
-count = 0
-while num >= 2:
-	num = math.sqrt(num)
-	count += 1
+
+def funkciika(num):
+    num1 = num
+    count = 1
+    while num >= 2:
+        num = math.sqrt(num)
+        count += 1
 	
-print(num1,'->',count)
+    return count
 
 def findLength(string): 
   
@@ -19,4 +20,7 @@ def findLength(string):
   
 string = "12345"
 print("Lenght", findLength(string))
-    
+
+p = int(input("Enter a number: "))
+
+print(funkciika(p))
